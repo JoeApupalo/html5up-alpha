@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123456387-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123456387-1');
+</script>
+
+	<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyBokn1GoCw1uhBMRTfYIVYRVnTgVQUct18",
+			authDomain: "prep-list.firebaseapp.com",
+			databaseURL: "https://prep-list.firebaseio.com",
+			projectId: "prep-list",
+			storageBucket: "prep-list.appspot.com",
+			messagingSenderId: "261315269090"
+		};
+		firebase.initializeApp(config);
+	</script>
+	<title>View Notes</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<style>
+		p{
+			margin:5px;
+			padding:0px;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+					<h1><a href="index.html">BiblioNotes</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#" class="icon fa-angle-down">Notes</a>
+								<ul>
+									<li><a href="generic.html">View Notes</a></li>
+									<li><a href="contact.html">Upload Notes</a></li>
+									<!--<li><a href="elements.html">Elements(Possibly Going to be removed)</a></li>-->
+									<!--<li>-->
+										<!--<a href="#">Submenu(Most Likely going to be removed)</a>-->
+									<!--	<ul>-->
+									<!--		<li><a href="#">Option One</a></li>-->
+									<!--		<li><a href="#">Option Two</a></li>-->
+									<!--		<li><a href="#">Option Three</a></li>-->
+									<!--		<li><a href="#">Option Four</a></li>-->
+									<!--	</ul>-->
+									<!--</li>-->
+								</ul>
+							</li>
+							<li><a href="#" class="button">Sign Up</a></li>
+						</ul>
+					</nav>
+				</header>
+
+		<!--<header id="header">-->
+		<!--	<h1><a href="index.html">Alpha</a> by HTML5 UP</h1>-->
+		<!--	<nav id="nav">-->
+		<!--		<ul>-->
+		<!--			<li><a href="index.html">Home</a></li>-->
+		<!--			<li>-->
+		<!--				<a href="#" class="icon fa-angle-down">Notes</a>-->
+		<!--				<ul>-->
+		<!--					<li><a href="generic.html">View Notes</a></li>-->
+		<!--					<li><a href="contact.html">Upload Notes</a></li>-->
+							<!--<li><a href="elements.html">Elements(Possibly Going to be removed)</a></li>-->
+							<!--<li>-->
+							<!--	<a href="#">Submenu</a>-->
+							<!--	<ul>-->
+							<!--		<li><a href="#">Option One</a></li>-->
+							<!--		<li><a href="#">Option Two</a></li>-->
+							<!--		<li><a href="#">Option Three</a></li>-->
+							<!--		<li><a href="#">Option Four</a></li>-->
+							<!--	</ul>-->
+							<!--</li>-->
+		<!--				</ul>-->
+		<!--			</li>-->
+		<!--			<li><a href="#" class="button">Sign Up</a></li>-->
+		<!--		</ul>-->
+		<!--	</nav>-->
+		<!--</header>-->
+
+		<!-- Main -->
+		<section id="main" class="container">
+			<header>
+				<h2>View Notes on any Course</h2>
+				<p>No Notes on a course? Upload them or message us so we can notify you when there are notes available!</p>
+				<div class="row gtr-50 gtr-uniform">
+					<div class="col-8 col-12-mobilep">
+						<input type="email" name="email" id="search" placeholder="Course" />
+					</div>
+					<div class="col-4 col-12-mobilep">
+						<input id="searchButton"type="submit" value="Search" class="fit" />
+					</div>
+				</div>
+			</header>
+
+
+			<div class="container">
+				<div class='row' id="postings">
+
+				</div>
+
+			</div>
+			<!--<div class="box">-->
+			<!--	<span class="image featured"><img src="images/pic01.jpg" alt="" /></span>-->
+			<!--	<h3>This is a subheading</h3>-->
+			<!--	<p>Cep risus aliquam gravida cep ut lacus amet. Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae ante vestibulum ante. Blandit. Ante accumsan nisi eu placerat gravida placerat adipiscing in risus fusce vitae ac mi accumsan nunc in accumsan tempor blandit aliquet aliquet lobortis. Ultricies blandit lobortis praesent turpis. Adipiscing accumsan adipiscing adipiscing ac lacinia cep. Orci blandit a iaculis adipiscing ac. Vivamus ornare laoreet odio vis praesent nunc lorem mi. Erat. Tempus sem faucibus ac id. Vis in blandit. Nascetur ultricies blandit ac. Arcu aliquam. Accumsan mi eget adipiscing nulla. Non vestibulum ac interdum condimentum semper commodo massa arcu.</p>-->
+			<!--	<div class="row">-->
+			<!--		<div class="row-6 row-12-mobilep">-->
+			<!--			<h3>And now a subheading</h3>-->
+			<!--			<p>Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae lorem ipsum adipiscing ac. Vivamus ornare laoreet odio vis praesent.</p>-->
+			<!--		</div>-->
+			<!--		<div class="row-6 row-12-mobilep">-->
+			<!--			<h3>And another subheading</h3>-->
+			<!--			<p>Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae lorem ipsum adipiscing ac. Vivamus ornare laoreet odio vis praesent.</p>-->
+			<!--		</div>-->
+			<!--	</div>-->
+			<!--</div>-->
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+				<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+				<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; BiblioNotes. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/generic.js"></script>
+
+</body>
+
+</html>
