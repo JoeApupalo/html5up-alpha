@@ -20,6 +20,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
 	</head>
 	<body class="landing is-preload">
 		<div id="page-wrapper">
@@ -31,10 +32,12 @@
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li>
-								<a href="#" class="icon fa-angle-down">Notes</a>
-								<ul>
 									<li><a href="generic.html">View Notes</a></li>
 									<li><a href="contact.html">Upload Notes</a></li>
+								<!--<a href="#" class="icon fa-angle-down">Notes</a>-->
+								<!--<ul>-->
+								<!--	<li><a href="generic.html">View Notes</a></li>-->
+								<!--	<li><a href="contact.html">Upload Notes</a></li>-->
 									<!--<li><a href="elements.html">Elements</a></li>-->
 									<!--<li>-->
 									<!--	<a href="#">Submenu(Probably going to remove this)</a>-->
@@ -45,9 +48,9 @@
 									<!--		<li><a href="#">Option Four</a></li>-->
 									<!--	</ul>-->
 									<!--</li>-->
-								</ul>
+								<!--</ul>-->
 							</li>
-							<li><a href="#" class="button">Sign Up</a></li>
+							<li><a href="signup.html" id="login" class="button">Sign Up</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -57,7 +60,7 @@
 					<h2>BiblioNotes</h2>
 					<p>A platform for students to share and access notes from their classmates.</p>
 					<ul class="actions special">
-						<li><a href="#" class="button primary">Sign Up</a></li>
+						<!--<li><a href="#" class="button primary">Sign Up</a></li>-->
 						<li><a href="#" class="button">Learn More</a></li>
 					</ul>
 				</section>
@@ -174,6 +177,22 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+		<script>
+		firebase.auth().signInWithPopup(provider).then(function(result) {
+  // This gives you a Google Access Token. You can use it to access the Google API.
+  var token = result.credential.accessToken;
+  // The signed-in user info.
+  var user = result.user;
+  // ...
+}).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // The email of the user's account used.
+  var email = error.email;
+  // The firebase.auth.AuthCredential type that was used.
+  var credential = error.credential;
+  // ...
+});</script>
 	</body>
 </html>

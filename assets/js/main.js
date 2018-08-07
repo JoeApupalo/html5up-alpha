@@ -145,27 +145,3 @@ function submitToDatabase(url){
     console.log(posting)
     firebase.database().ref('/').push(posting)
 }
-// function getPostings(){
-//     firebase.database().ref('/').on('value', (snapshot)=>{
-//         let data= snapshot.val()
-//         let displayPostings = document.querySelector('#postings')
-//         for(key in data){
-//             displayPostings.innerHTML += `
-//             <div class="box" style="width: 18rem;">
-//               //<img class="card-img-top" src="${data[key].image}" alt="Card image cap">
-//               <div class="col-12">
-//                 <h5 class="col-12">${data[key].name}</h5>
-//                 <p class="col-12">${data[key].email}</p>
-//                 <p class="col-12">${data[key].subject}</p>
-//                 <p class="col-12">${data[key].file}</p>
-//                  <p class="col-12">${data[key].message}</p>
-//                 <a href="#" class="btn btn-primary">Go somewhere</a>
-//               </div>
-//             </div>
-//             `
-//             console.log(displayPostings)
-//         }
-//     })
-// }
-
-// window.onload = getPostings
