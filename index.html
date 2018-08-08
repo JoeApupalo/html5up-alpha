@@ -16,7 +16,7 @@
   gtag('config', 'UA-123456387-1');
 </script>
 
-		<title>Alpha by HTML5 UP</title>
+		<title>BiblioNotes</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -31,9 +31,10 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li>
-									<li><a href="generic.html">View Notes</a></li>
-									<li><a href="contact.html">Upload Notes</a></li>
+							<li><a href="elements.html">About Us</a></li>
+							<!--<li>-->
+							<!--		<li><a href="generic.html">View Notes</a></li>-->
+							<!--		<li><a href="contact.html">Upload Notes</a></li>-->
 								<!--<a href="#" class="icon fa-angle-down">Notes</a>-->
 								<!--<ul>-->
 								<!--	<li><a href="generic.html">View Notes</a></li>-->
@@ -50,7 +51,7 @@
 									<!--</li>-->
 								<!--</ul>-->
 							</li>
-							<li><a href="signup.html" id="login" class="button">Sign Up</a></li>
+							<li><a href="signup.html" id="login" class="button">Sign Up/Log In</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -58,10 +59,12 @@
 			<!-- Banner -->
 				<section id="banner">
 					<h2>BiblioNotes</h2>
-					<p>A platform for students to share and access notes from their classmates.</p>
+					<p>
+					A platform for students to share and access notes from their classmates.
+					</p>
 					<ul class="actions special">
 						<!--<li><a href="#" class="button primary">Sign Up</a></li>-->
-						<li><a href="#" class="button">Learn More</a></li>
+						<li><a href="elements.html" class="button">Learn More</a></li>
 					</ul>
 				</section>
 
@@ -141,11 +144,13 @@
 
 					<form>
 						<div class="row gtr-50 gtr-uniform">
-							<div class="col-8 col-12-mobilep">
-								<input type="email" name="email" id="email" placeholder="Email Address" />
-							</div>
-							<div class="col-4 col-12-mobilep">
-								<input type="submit" value="Sign Up" class="fit" />
+							<!--<div class="col-8 col-12-mobilep">-->
+							<!--	<input type="email" name="email" id="email" placeholder="Email Address" />-->
+							<!--</div>-->
+							<div class="col-12 col-12-mobilep">
+								<input type="button" value="Sign Up" onclick="location.href='signup.html';" class="fit" />
+								<!--type="button" onclick="location.href='http://google.com';" value="Go to Google"-->
+								<!--<li><a href="signup.html" id="login" type="submit" class="fit">Sign Up</a></li>-->
 							</div>
 						</div>
 					</form>
@@ -177,22 +182,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-		<script>
-		firebase.auth().signInWithPopup(provider).then(function(result) {
-  // This gives you a Google Access Token. You can use it to access the Google API.
-  var token = result.credential.accessToken;
-  // The signed-in user info.
-  var user = result.user;
-  // ...
-}).catch(function(error) {
-  // Handle Errors here.
-  var errorCode = error.code;
-  var errorMessage = error.message;
-  // The email of the user's account used.
-  var email = error.email;
-  // The firebase.auth.AuthCredential type that was used.
-  var credential = error.credential;
-  // ...
-});</script>
 	</body>
 </html>

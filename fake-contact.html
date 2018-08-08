@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123456387-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123456387-1');
+</script>
+
+		<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBokn1GoCw1uhBMRTfYIVYRVnTgVQUct18",
+        authDomain: "prep-list.firebaseapp.com",
+        databaseURL: "https://prep-list.firebaseio.com",
+        projectId: "prep-list",
+        storageBucket: "prep-list.appspot.com",
+        messagingSenderId: "261315269090"
+    };
+    firebase.initializeApp(config);
+</script>
+		<title>Contact - Alpha by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1><a>BiblioNotes</a> </h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="fake-index.html">Home</a></li>
+							<li>
+								<li><a href="fake-generic.html">View Notes</a></li>
+									<li><a href="fake-contact.html">Upload Notes</a></li>
+									<li><a href="fake-elements.html">About Us</a></li>
+								<!--<a href="#" class="icon fa-angle-down">Notes</a>-->
+								<!--<ul>-->
+								<!--	<li><a href="generic.html">View Notes</a></li>-->
+								<!--	<li><a href="contact.html">Upload Notes</a></li>-->
+									<!--<li><a href="elements.html">Elements(Possibly Going to be removed)</a></li>-->
+									<!--<li>-->
+										<!--<a href="#">Submenu(Most Likely going to be removed)</a>-->
+									<!--	<ul>-->
+									<!--		<li><a href="#">Option One</a></li>-->
+									<!--		<li><a href="#">Option Two</a></li>-->
+									<!--		<li><a href="#">Option Three</a></li>-->
+									<!--		<li><a href="#">Option Four</a></li>-->
+									<!--	</ul>-->
+									<!--</li>-->
+								<!--</ul>-->
+							</li>
+							<li><a href="index.html" class="button">Log Out</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<section id="main" class="container medium">
+					<header>
+						<h2>Upload your Notes!</h2>
+						<p>Type in the information that is required.</p>
+					</header>
+					<div class="box">
+						<form method="POST" action = "#">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-6 col-12-mobilep">
+									<input type="text" name="name" id="name" value="" placeholder="Notes Title" required/>
+								</div>
+								<div class="col-6 col-12-mobilep">
+									<input type="email" name="email" id="email" value="" placeholder="Email" required/>
+								</div>
+								<div class="col-12">
+									<input type="text" name="course" id="subject" value="" placeholder="Course" required/>
+								</div>
+								<div class="col-12">
+									<input type="file" name="file" id="file" value="" placeholder="File"required />
+								</div>
+								<div class="col-12">
+									<textarea name="message" id="message" placeholder="Enter a description" rows="6" required></textarea>
+								</div>
+								<div class="col-12">
+									<ul class="actions special">
+										<li><input type="submit" id="submitted" value="Upload Note" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; NoteDen. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
